@@ -1,0 +1,1 @@
+this is my day 6 task in class calculate the uber price, person class to hold all the details,class to movie details and  class circle.

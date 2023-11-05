@@ -1,4 +1,4 @@
-//1. https://github.com/rvsp/typescript-oops/blob/master/Practice/Movie.md
+// //1. https://github.com/rvsp/typescript-oops/blob/master/Practice/Movie.md
 class Movie{
    constructor(title,studio,rating ="pG"){
       this.title = title;
@@ -14,7 +14,7 @@ console.log(Movie1.rating);
 console.log(Movie2.rating);
 
 
-//2. https://github.com/rvsp/typescript-oops/blob/master/Practice/class-circle.md
+// //2. https://github.com/rvsp/typescript-oops/blob/master/Practice/class-circle.md
 class circle{
    constructor(radius,color){
       this.radius = radius;
@@ -33,7 +33,7 @@ class circle{
       this.color = color;
    }
    get toString(){
-      return `"circle[radius ${this.radius},color =${this.color}]"`
+      return `"circle[radius= ${this.radius},color =${this.color}]"`
    }
    get areaCircle(){
       return Math.PI*this.radius;
@@ -41,14 +41,15 @@ class circle{
       return 2 * Math.PI * this.radius;
    }
 }
-var obj1 = newCircle(1.0,"red");
+var obj1 = new circle(1.0,"red");
+console.log(obj1.radiusCircle);
 obj1.radiusCircle = 2.2;
 console.log(obj1.colorCircle);
 obj1.colorCircle = "blue";
-console.log(obj.colorCircle);
+console.log(obj1.colorCircle);
 console.log(obj1.toString);
 console.log(obj1.areaCircle);
-console.log(circumference);
+console.log(obj1.circumferenceCircle);
 
 //3. write a "person" class to hold all the details
 
@@ -66,4 +67,19 @@ console.log(circumference);
     console.log(person1.age);
     console.log(person1.gender);
     console.log(person1.salary);
+/* uber price */
+class UberPrice{
+   constructor(kilometer,price=50){
+      this.kilometer =kilometer;
+      this.price =price;
+
+   }
+   get Price(){
+      return this.kilometer*this.price;
+   }
+}
+var uber1 = new UberPrice(5);
+var uber2 = new UberPrice(5,125);
+console.log(uber1.Price);
+console.log(uber2.Price);
     
